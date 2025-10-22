@@ -165,12 +165,13 @@ Commentaires: ${formData.commentaire || "-"}
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center mb-6">
-            <span className="text-6xl font-bold text-[#c0a97a]">EFTG</span>
-          </div>
-          <h1 className="text-2xl font-medium text-[#c0a97a] mb-2">PRO</h1>
-          <div className="w-24 h-1 bg-[#c0a97a] mx-auto mb-8 rounded-full"></div>
-          <p className="text-2xl font-bold text-gray-800">FEUILLE DE SONDAGE - EFTG PRO</p>
+            {/* Enlarged EFTG logo */}
+            <h1 className=" font-bold text-[#c0a97a]">EFTG</h1>
+          {/* Enlarged PRO text */}
+          <h3 className=" font-medium text-[#c0a97a] mb-2">PRO</h3>
+          <div className="w-32 h-1.5 bg-[#c0a97a] mx-auto mb-8 rounded-full"></div>
+          {/* Enlarged title */}
+          <p className="text-3xl font-bold text-gray-800">FEUILLE DE SONDAGE - EFTG PRO</p>
         </div>
 
         {/* Form Container */}
@@ -346,7 +347,7 @@ Commentaires: ${formData.commentaire || "-"}
                     Traitement en cours...
                   </>
                 ) : (
-                  "Télécharger en PDF"
+                  "SUBMIT"
                 )}
               </button>
               
